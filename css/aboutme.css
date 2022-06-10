@@ -1,0 +1,41 @@
+header{
+      background: url("https://cdn5.vectorstock.com/i/1000x1000/70/09/seamless-abstract-pattern-simple-background-vector-23167009.jpg"); 	
+      border: solid lightgrey;
+      border-width: 10px 0px 10px 0px;
+      margin: 0 auto;
+      text-align: center;
+    }
+     h1{
+    font-size: 3em;
+    }
+    
+    h3{
+      background-color: #ce54c7;
+      padding: 15px;
+      font-size: 1.5em;
+      border-left: 10px solid #d6d5cd;
+    }
+    
+    header, h3{
+    color: white;
+    font-family: "Arial Black", Gadget, sans-serif;
+    }
+    
+    body{
+    font-family: helvetica, arial, san-serif;
+    }
+    
+    p, ul {
+    padding-left: 50px;
+      font-size: 1.3em;
+      list-style: none;
+    }
+    
+    .image1 {
+    border-radius : 100%;
+    border: 10px solid white;
+    }
+    
+    .emoji {
+      font-size: 8em;
+    }
