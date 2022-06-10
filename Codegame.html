@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects</title>
+  <link rel="icon" type="image/x-icon" href="https://www.weebly.com/editor/uploads/1/4/1/3/141329219/custom_themes/146172801429999116/files/images/File2.png"> 
+ <!-- Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Space+Mono&display=swap" rel="stylesheet">
+  <!-- Network -->
+ <link rel="stylesheet" href="networkdetect.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+  <!-- stylesheet from pc -->
+ <link rel="stylesheet" href="./css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
+  <script src="./js/Jquery/jquery.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <div class="w3-container">
+        <h2> Code Game </h2>
+                  <label for="userName"> Type your name to continew. </label><br>
+                  <input type="userName" class="input" id="userName" placeholder="Enter your name." required><br><br>
+                  
+          <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Code Game Now!</button>
+        
+          <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-4">
+              <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('id01').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+                
+              </header>
+              <div class="w3-container">
+              <!-- Code -->
+                    <canvas class="gameShow" id="game"  width="400" height="400">
+                    </canvas>
+                    <script src="./js/snake.js">
+                    </script>
+                  
+                 <!-- Close -->
+              </div>
+              <footer class="w3-container w3-teal">
+                <p class="welcome" style="float: left;color: rgb(255, 255, 255);"></p>
+              </footer>
+              <script>
+                $('.w3-button').click (function(){
+                              let name = $('.input').val();
+                              $('.welcome').html(`Hello, ${name}`);
+                              });
+                            </script>
+            </div>
+          </div>
+        </div>
+      </body>
+</html>
